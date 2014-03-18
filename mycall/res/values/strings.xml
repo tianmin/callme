@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mycall</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="welcome">欢迎界面</string>
+    <string name="str_me">我</string>
+    <string name="str_message">消息</string>
+    <string name="str_contacts">通讯录</string>
+    <string name="str_call">键盘</string>
+    <string name="call_text">键盘</string>
+    <string name="contacts_text">通讯录</string>
+    <string name="message_text">消息</string>
+    <string name="me_text">我</string>
+    <string name="me_title">个人中心</string>
+    <string name="add_group">添加组</string>
+    <string name="input_group_name">请输入组名</string>
+    <string name="group_ok">确定</string>
+    <string name="group_cancel">取消</string>
+    <string name="input_user_name">请输入姓名</string>
+    <string name="input_phone_number">请输入电话号码</string>
+    <string name="add_user_group">添加到组</string>
+    <string name="add_all_att">添加更多项</string>
+    <string name="exit">返回</string>
+    <string name="save">保存</string>
+    <string name="add_contacts">添加联系人</string>
+    <string name="add_remark">备注</string>
+    <string name="input_contact_remark">请输入备注</string>
+    <string name="input_contact_nickname">请输入咪称</string>
+    <string name="input_contact_phone">请输入固定电话</string>
+    <string name="input_contact_email">请输入邮箱</string>
+    <string name="input_contact_address">请输入住址</string>
+    <string name="input_contact_company">请输入公司</string>
+    <string name="input_contact_brithday">请输入生日</string>
+
+    <!-- 消息模块 -->
+    <string name="message_name">张三</string>
+    <string name="message_item_text">最近还好吗?</string>
+    <string name="message_call_number">13528867690</string>
+    <string name="call_meessge_count">已接 8</string>
+    <string name="call_record">通话记录</string>
+    <string name="message_record">短消息</string>
+
+    <!-- 联系人模块 -->
+    <string name="search">搜索</string>
+    <string name="add">添加</string>
+
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="3dp"
+    android:orientation="horizontal" >
+
+    <com.diandian.mycall.view.BootstrapButton
+        android:id="@+id/search_call_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="电话"
+        bootstrapbutton:bb_icon_right="fa-android"
+        bootstrapbutton:bb_type="info" />
+
+    <com.diandian.mycall.view.BootstrapButton
+        android:id="@+id/search_sms_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="短信"
+        bootstrapbutton:bb_icon_right="fa-android"
+        bootstrapbutton:bb_type="info" />
+
+    <com.diandian.mycall.view.BootstrapButton
+        android:id="@+id/search_manager_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="管理"
+        bootstrapbutton:bb_icon_right="fa-android"
+        bootstrapbutton:bb_type="info" />
+
+</LinearLayout>

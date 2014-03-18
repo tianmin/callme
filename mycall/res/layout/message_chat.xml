@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 页面头部 -->
+
+    <LinearLayout
+        android:id="@+id/msg_chat_header"
+        android:layout_width="match_parent"
+        android:layout_height="54dip"
+        android:background="@drawable/bg_bottombar_center_normal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/chat_img"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/love1" />
+
+        <TextView
+            android:id="@+id/chat_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="正在与田敏进行聊天"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- 页面中部 -->
+
+    <ListView
+        android:id="@+id/msg_chat_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/msg_chat_footer"
+        android:layout_below="@+id/msg_chat_header"
+        android:divider="@null"
+         />
+
+    <!-- 页面尾部 -->
+
+    <LinearLayout
+        android:id="@+id/msg_chat_footer"
+        android:layout_width="match_parent"
+        android:layout_height="54dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/expression_btn"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_chat"
+            android:src="@drawable/ic_chat_plus_normal" />
+
+        <EditText
+            android:id="@+id/et_message_content"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/edittext_sendmsg_normal"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_sendmsg_normal"
+            android:text="发送" />
+    </LinearLayout>
+
+</RelativeLayout>

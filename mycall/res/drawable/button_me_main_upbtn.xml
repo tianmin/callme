@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+   <!-- 使用按钮 -->
+   <!-- 按下按钮后 -->
+     <item android:state_pressed="true" >
+        <shape>
+            <!-- 渐变 -->
+            <gradient
+                android:startColor="#6B8E23"
+                android:endColor="#6B8E23"
+                android:type="radial"
+                android:gradientRadius="50" />
+         <stroke
+                android:width="2dp"
+                android:color="#6B8E23"
+             />
+            <!-- 圆角 -->
+            <corners
+                android:topRightRadius="10dp"
+                android:bottomLeftRadius="10dp"
+                android:topLeftRadius="10dp"
+                android:bottomRightRadius="10dp"/>
+
+            
+        </shape>
+    </item>
+
+  
+
+     <!-- 按钮外形 -->
+    <item>       
+        <shape>
+            <gradient  android:startColor="#ffffff"
+                       android:endColor="#ffffff"
+                 
+                />
+            
+          <stroke
+                android:width="2dp"
+                android:color="#ffffff"
+             />
+            <corners 
+                android:topRightRadius="10.0dip"
+                android:bottomLeftRadius="10dip"
+                android:topLeftRadius="10dip"
+                android:bottomRightRadius="10dip"
+            />
+         
+        </shape>
+    </item>
+
+</selector>

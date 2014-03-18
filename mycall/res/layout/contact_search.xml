@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/add_group_selector"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/group_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/add_group_title_selector"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/search"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/search_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/contact_search_bottom"
+        android:layout_below="@+id/group_title" >
+    </ExpandableListView>
+
+    <!-- 96+48 = 144 -->
+
+    <LinearLayout
+        android:id="@+id/contact_search_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <com.diandian.mycall.view.BootstrapEditText
+            android:id="@+id/et_search"
+            android:layout_width="250dp"
+            android:layout_height="48dp"
+            android:hint="@string/input_contact_remark"
+            bootstrapbutton:be_roundedCorners="true"
+            bootstrapbutton:be_state="success" />
+
+        <LinearLayout
+            android:id="@+id/contact_search_operator"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <com.diandian.mycall.view.BootstrapButton
+                android:id="@+id/search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="7dp"
+                android:layout_weight="1"
+                android:text="@string/group_ok"
+                bootstrapbutton:bb_icon_right="fa-android"
+                bootstrapbutton:bb_roundedCorners="true"
+                bootstrapbutton:bb_type="default" />
+
+            <com.diandian.mycall.view.BootstrapButton
+                android:id="@+id/search_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="14dp"
+                android:layout_weight="1"
+                android:text="@string/group_cancel"
+                bootstrapbutton:bb_icon_right="fa-android"
+                bootstrapbutton:bb_roundedCorners="true"
+                bootstrapbutton:bb_type="default" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

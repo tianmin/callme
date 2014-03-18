@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/rightBehindMenuScroll"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        style="@style/behindMenuScrollContent"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+         >
+
+        <Button
+            android:id="@+id/call_btn"
+            style="@style/behindMenuItemLabel"
+            android:layout_width="@dimen/keyboard_operator_button_width"
+            android:background="@drawable/boardbackground"
+            android:text="通话"
+            android:textSize="@dimen/keyboard_operator_button_textsize" />
+
+        <Button
+            android:id="@+id/message_btn"
+            style="@style/behindMenuItemLabel"
+            android:layout_width="@dimen/keyboard_operator_button_width"
+            android:background="@drawable/boardbackground"
+            android:text="发短信"
+            android:textSize="@dimen/keyboard_operator_button_textsize" />
+
+        <Button
+            android:id="@+id/addcontact_btn"
+            style="@style/behindMenuItemLabel"
+            android:layout_width="@dimen/keyboard_operator_button_width"
+            android:background="@drawable/boardbackground"
+            android:text="添加联系人"
+            android:textSize="@dimen/keyboard_operator_button_textsize" />
+
+        <Button
+            android:id="@+id/back_btn"
+            style="@style/behindMenuItemLabel"
+            android:layout_width="@dimen/keyboard_operator_button_width"
+            android:background="@drawable/boardbackground"
+            android:text="返回"
+            android:textSize="@dimen/keyboard_operator_button_textsize" />
+    </LinearLayout>
+
+</RelativeLayout>

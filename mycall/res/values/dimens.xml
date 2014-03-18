@@ -1,0 +1,57 @@
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bbuton_rounded_corner_radius">5dp</dimen>
+    <dimen name="dialog_width">300dp</dimen>
+    <dimen name="dialog_height">220dp</dimen>
+
+    <!-- 开机动画 -->
+    <dimen name="splash_margin_top">122dp</dimen>
+    <dimen name="splash_margin_left">107dp</dimen>
+    <dimen name="splash_textsize">40sp</dimen>
+    <dimen name="splash_margin_call_left">3dp</dimen>
+
+    <!-- 消息模块 -->
+    <dimen name="header_image_width">68dp</dimen>
+    <dimen name="header_image_height">68dp</dimen>
+    <dimen name="message_item_textsize">12sp</dimen>
+    <dimen name="message_item_datetextsize">12sp</dimen>
+    <dimen name="message_item_content_margin_bottom">10dp</dimen>
+    <dimen name="message_item_name_margin_top">8dp</dimen>
+    <dimen name="message_item_date_margin_top">8dp</dimen>
+    <dimen name="message_item_date_margin_right">12dp</dimen>
+    <dimen name="search_dialog_width">300dp</dimen>
+    <dimen name="search_dialog_height">300dp</dimen>
+
+    <!-- (键盘模块) phone keyboard -->
+    <dimen name="keyboard_all_width">167dp</dimen>
+    <dimen name="keyboard_content_height">246dp</dimen>
+    <dimen name="keyboard_content_textsize">40sp</dimen>
+    <dimen name="keyboard_width">274dp</dimen>
+    <dimen name="keyboard_margin_right_leftbtn">1dp</dimen>
+    <dimen name="keyboard_margin_left_leftbtn">17dp</dimen>
+    <dimen name="keyboard_margin_bottom_leftbtn">3dp</dimen>
+    <dimen name="keyboard_margin_top_leftbtn">3dp</dimen>
+    <dimen name="keyboard_textsize_leftbtn">22sp</dimen>
+    <dimen name="keyboard_margin_right_centerbtn">9dp</dimen>
+    <dimen name="keyboard_margin_left_centerbtn">9dp</dimen>
+    <dimen name="keyboard_margin_bottom_centerbtn">3dp</dimen>
+    <dimen name="keyboard_margin_top_centerbtn">3dp</dimen>
+    <dimen name="keyboard_textsize_centerbtn">22sp</dimen>
+    <dimen name="keyboard_margin_right_bottombtn">17dp</dimen>
+    <dimen name="keyboard_margin_left_bottombtn">1dp</dimen>
+    <dimen name="keyboard_margin_bottom_bottombtn">3dp</dimen>
+    <dimen name="keyboard_margin_top_bottombtn">3dp</dimen>
+    <dimen name="keyboard_textsize_bottombtn">22sp</dimen>
+    <dimen name="keyboard_textsize_fuhao">25sp</dimen>
+    <dimen name="keyboard_margin_bottom_endbtn">25dp</dimen>
+
+    <!-- operator button -->
+
+    <dimen name="keyboard_operator_margin_top">370dp</dimen>
+    <dimen name="keyboard_operator_padding_top">0dp</dimen>
+    <dimen name="keyboard_operator_button_width">141dp</dimen>
+    <dimen name="keyboard_operator_button_textsize">23sp</dimen>
+
+</resources>

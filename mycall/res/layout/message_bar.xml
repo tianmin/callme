@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_bar"
+    android:layout_width="match_parent"
+    android:layout_height="54dip"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/bg_bottombar_center_normal"
+    android:orientation="horizontal"
+    android:paddingBottom="3dp"
+    android:paddingLeft="45dp"
+    android:paddingRight="45dp"
+    android:paddingTop="3dp" >
+
+    <Button
+        android:id="@+id/call_record"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/bottomtabbutton_leftred"
+        android:gravity="center"
+        android:text="通话记录"
+        android:textColor="#333333"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:layout_width="1px"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/bottomtabbutton_separation" />
+
+    <Button
+        android:id="@+id/message_record"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/bottomtabbutton_rightwhite"
+        android:text="短信记录"
+        android:textColor="#333333"
+        android:textSize="12sp" />
+
+</LinearLayout>

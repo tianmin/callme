@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/reg_content1"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/phonenumber_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本机号码"
+            android:textSize="15sp" />
+
+        <com.diandian.mycall.view.BootstrapEditText
+            android:id="@+id/reg_et_phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            bootstrapbutton:be_roundedCorners="true"
+            bootstrapbutton:be_state="info" >
+        </com.diandian.mycall.view.BootstrapEditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reg_content2"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_content1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/name_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您的姓名"
+            android:textSize="15sp" />
+
+        <com.diandian.mycall.view.BootstrapEditText
+            android:id="@+id/reg_et_username"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            bootstrapbutton:be_roundedCorners="true"
+            bootstrapbutton:be_state="info" >
+        </com.diandian.mycall.view.BootstrapEditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reg_content3"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_content2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/password_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码设定"
+            android:textSize="15sp" />
+
+        <com.diandian.mycall.view.BootstrapEditText
+            android:id="@+id/reg_et_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:inputType="textPassword"
+            bootstrapbutton:be_roundedCorners="true"
+            bootstrapbutton:be_state="info" >
+        </com.diandian.mycall.view.BootstrapEditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reg_content4"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_content3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/two_password_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密码确认"
+            android:textSize="15sp" />
+
+        <com.diandian.mycall.view.BootstrapEditText
+            android:id="@+id/reg_et_two_password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:inputType="textPassword"
+            bootstrapbutton:be_roundedCorners="true"
+            bootstrapbutton:be_state="info" >
+        </com.diandian.mycall.view.BootstrapEditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reg_btn_ok"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/reg_content4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_take_ok"
+        android:onClick="confirm"
+        android:text="确认"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

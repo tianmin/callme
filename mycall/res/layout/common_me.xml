@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8E8E8" >
+
+    <include
+        android:id="@+id/we_header"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:id="@+id/me_header"
+        android:layout_width="fill_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/we_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/me_maim_page_outline"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/me_header_img"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_launcher" />
+
+        <LinearLayout
+            android:id="@+id/me_header_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/me_tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="姓名"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/me_tv_feel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="我的心情标签 ：开心 " />
+
+            <TextView
+                android:id="@+id/me_tv_feel_words"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="3dp"
+                android:ems="2"
+                android:text="lskdjflksjfslkdfjlsjfklasjflksajfl" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/me_btn_mood"
+            android:layout_width="240dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/me_header_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_me_main_mode_confirm"
+            android:text="换个心情"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <com.diandian.mycall.view.corner.UITableView
+        android:id="@+id/tableview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/me_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp" >
+    </com.diandian.mycall.view.corner.UITableView>
+
+    <com.diandian.mycall.view.corner.UITableView
+        android:id="@+id/tableview_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp" >
+    </com.diandian.mycall.view.corner.UITableView>
+
+</RelativeLayout>

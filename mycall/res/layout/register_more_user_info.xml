@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- /////////////////中间部门///////////////////////// -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E8E8E8" >
+
+        <RelativeLayout
+            android:id="@+id/more_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <!-- /////////////////////////头部///////////////////////////// -->
+
+            <LinearLayout
+                android:id="@+id/more_header"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/head_img_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp" >
+
+                    <ImageView
+                        android:id="@+id/more_head_img"
+                        android:layout_width="96dp"
+                        android:layout_height="96dp"
+                        android:src="@drawable/love1" />
+
+                    <Button
+                        android:id="@+id/btn_head_manager"
+                        android:layout_width="96dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/more_head_img"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button_photocontrol"
+                        android:text="头像管理" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/user_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <com.diandian.mycall.view.BootstrapEditText
+                        android:id="@+id/moreinfo_et_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="12dp"
+                        android:hint="@string/input_user_name"
+                        bootstrapbutton:be_roundedCorners="true"
+                        bootstrapbutton:be_state="info" />
+
+                    <com.diandian.mycall.view.BootstrapEditText
+                        android:id="@+id/moreinfo_et_phone_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_margin="12dp"
+                        android:hint="@string/input_phone_number"
+                        android:inputType="number"
+                        bootstrapbutton:be_roundedCorners="true"
+                        bootstrapbutton:be_state="info" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 中部开始 -->
+
+            <LinearLayout
+                android:id="@+id/more_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/more_header"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+            </LinearLayout>
+            <!-- 中部结束 -->
+
+
+            <!-- //////////////////下边部分////////////////////// -->
+
+            <LinearLayout
+                android:id="@+id/more_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/more_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/more_btn_add_info"
+                    android:layout_width="240dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/button_me_more_control"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="添加更多项"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/more_btn_finish"
+                    android:layout_width="240dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginTop="80dp"
+                    android:background="@drawable/button_take_userinfo"
+                    android:text="完成"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

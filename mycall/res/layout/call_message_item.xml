@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp" >
+
+    <ImageView
+        android:id="@+id/call_header_image"
+        android:layout_width="@dimen/header_image_width"
+        android:layout_height="@dimen/header_image_height"
+        android:layout_centerVertical="true"
+        android:paddingBottom="3dp"
+        android:paddingLeft="3dp"
+        android:paddingTop="3dp"
+        android:src="@null" />
+
+    <TextView
+        android:id="@+id/call_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/message_item_name_margin_top"
+        android:layout_toRightOf="@+id/call_header_image"
+        android:text="@string/message_call_number"
+        android:textSize="@dimen/message_item_textsize" />
+
+    <TextView
+        android:id="@+id/call_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/call_header_image"
+        android:layout_marginBottom="@dimen/message_item_content_margin_bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/call_header_image"
+        android:text="@string/call_meessge_count"
+        android:textSize="@dimen/message_item_textsize" />
+
+    <TextView
+        android:id="@+id/call_message_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/call_header_image"
+        android:layout_marginRight="@dimen/message_item_date_margin_right"
+        android:layout_marginTop="@dimen/message_item_date_margin_top"
+        android:text="8|时间"
+        android:textSize="@dimen/message_item_textsize" />
+
+</RelativeLayout>
